@@ -1,0 +1,177 @@
+@import "normalize";
+@import "header";
+@import "search";
+@import "user-area";
+@import "site-navigation";
+@import "promo";
+@import "review";
+@import "collections";
+:root {
+    --main-padding: 20px;
+}
+
+@media all and (min-width: 375px) {
+     :root {
+        --main-padding: 40px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.logo {
+    width: 61px;
+    height: 22px;
+}
+
+.logo:focus {
+    border: 1px solid orange;
+}
+
+.main-nav {
+    position: absolute;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    &>a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.main-btn {
+    color: white;
+    background-color: #2F80ED;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.main-btn_big {
+    padding: 14px;
+    min-width: 150px;
+}
+
+.main-btn_mini {
+    padding: 7px;
+    min-width: 130px;
+}
+
+.burger__open {
+    background-image: url('../img/burger.svg');
+    background-repeat: no-repeat;
+    background-size: 18px 14px;
+    background-position: 50%;
+    background-color: transparent;
+    border: none;
+}
+
+.section-title {
+    margin-bottom: 3rem;
+}
+
+.equipment-sel {
+    padding: 0 var(--main-padding) 58px;
+}
+
+.equipment__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.equipment__item-picture {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.equipment__item-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.comments {
+    background-image: url('../img/comback.jpg');
+}
+
+.comment__text {
+    margin: 0 16px 36px;
+    padding: 40px 20px;
+    border: 1px solid #2F80ED;
+    border-radius: 17px;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.comment__img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.comment__author-name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.comment__btn {
+    margin: 0 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #2F80ED;
+}
+
+.comment__btn_active {
+    background-color: #2F80ED;
+}
+
+.comment__btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 36px;
+}
+
+ul.footer-nav {
+    padding-top: 32px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-nav__item {
+    padding: 10px;
+}
+
+.footer__nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.copy {
+    color: #2F80ED;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 18px;
+}

@@ -1,0 +1,43 @@
+.reviews {
+    margin: 0 var(--main-padding) 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 52px;
+}
+
+.review h3 {
+    width: 100%;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 14px;
+}
+
+.review__text {
+    width: 100%;
+    font-size: 12px;
+    line-height: 2;
+    color: #4F4F4F;
+    margin-bottom: 34px;
+}
+
+.review a {
+    width: 45%;
+}
+
+.rewiew__picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews__img {
+    width: 68%;
+}

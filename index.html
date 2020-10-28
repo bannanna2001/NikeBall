@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Nike Ball</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="user-area">
+            <a href="#no_scroll" class="logo" tabindex='1'>
+                <img src="img/logo.png 1x" srcset="img/logo@2x.png 2x" width="61" height="22" alt="Интернет магазин Nike Ball">
+            </a>
+            <div class="search">
+                <label for="search__input" class="search__label">Search</label>
+                <input type="text" name="search__input" id="search__input" class="search__input">
+            </div>
+            <div class="user-area__actions">
+                <a href="#no_scroll" class="user-area__link" area-label="Избранное">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <path d="M22.5 6.9C22.2 6.2 21.7 5.5 21.1 4.9 20.6 4.3 19.9 3.9 19.1 3.5 18.3 3.2 17.5 3 16.6 3.1 15.4 3.1 14.2 3.4 13.2 4 13 4.2 12.7 4.3 12.5 4.5 12.3 4.3 12 4.2 11.8 4 10.8 3.4 9.6 3.1 8.4 3.1 7.5 3.1 6.7 3.2 5.9 3.5 5.1 3.9 4.4 4.3 3.9 4.9 3.3 5.5 2.8 6.2 2.5 6.9 2.1 7.7 2 8.5 2 9.4 2 10.2 2.1 11.1 2.4 11.9 2.7 12.7 3.1 13.4 3.6 14.2 4.4 15.3 5.5 16.6 6.9 17.9 9.2 19.9 11.4 21.4 11.5 21.5L12.1 21.8C12.3 22 12.7 22 12.9 21.8L13.5 21.5C13.6 21.4 15.8 19.9 18.1 17.9 19.5 16.6 20.6 15.3 21.4 14.2 21.9 13.4 22.3 12.7 22.5 11.9 22.9 11.1 23 10.2 23 9.4 23 8.5 22.9 7.7 22.5 6.9V6.9ZM12.5 19.9C12.5 19.9 3.8 14.3 3.8 9.4 3.8 6.9 5.9 4.9 8.4 4.9 10.2 4.9 11.7 5.9 12.5 7.4 13.3 5.9 14.8 4.9 16.6 4.9 19.1 4.9 21.2 6.9 21.2 9.4 21.2 14.3 12.5 19.9 12.5 19.9Z" 
+                        fill="black"/>
+                    </svg>
+                </a>
+                <a href="#no_scroll" class="user-area__link" area-label="Корзина покупок">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <path d="M0 2.3C0 2.1 0.1 1.9 0.2 1.8 0.4 1.6 0.6 1.6 0.8 1.6H3.1C3.3 1.6 3.5 1.6 3.6 1.7 3.7 1.8 3.8 2 3.9 2.2L4.5 4.7H22.7C22.8 4.7 22.9 4.7 23 4.8 23.1 4.8 23.2 4.9 23.3 5 23.3 5.1 23.4 5.2 23.4 5.3 23.4 5.4 23.4 5.5 23.4 5.6L21.1 18.1C21 18.3 21 18.5 20.8 18.6 20.7 18.7 20.5 18.7 20.3 18.8H6.3C6.1 18.7 5.9 18.7 5.8 18.6 5.6 18.5 5.5 18.3 5.5 18.1L3.1 5.6 2.5 3.1H0.8C0.6 3.1 0.4 3 0.2 2.9 0.1 2.7 0 2.6 0 2.3ZM4.8 6.3L6.9 17.2H19.7L21.7 6.3H4.8ZM7.8 18.8C7 18.8 6.2 19.1 5.6 19.7 5 20.3 4.7 21 4.7 21.9 4.7 22.7 5 23.5 5.6 24.1 6.2 24.7 7 25 7.8 25 8.6 25 9.4 24.7 10 24.1 10.6 23.5 10.9 22.7 10.9 21.9 10.9 21 10.6 20.3 10 19.7 9.4 19.1 8.6 18.8 7.8 18.8ZM18.8 18.8C17.9 18.8 17.1 19.1 16.5 19.7 16 20.3 15.6 21 15.6 21.9 15.6 22.7 16 23.5 16.5 24.1 17.1 24.7 17.9 25 18.8 25 19.6 25 20.4 24.7 21 24.1 21.5 23.5 21.9 22.7 21.9 21.9 21.9 21 21.5 20.3 21 19.7 20.4 19.1 19.6 18.8 18.8 18.8ZM7.8 20.3C7.4 20.3 7 20.5 6.7 20.8 6.4 21.1 6.3 21.5 6.3 21.9 6.3 22.3 6.4 22.7 6.7 23 7 23.3 7.4 23.4 7.8 23.4 8.2 23.4 8.6 23.3 8.9 23 9.2 22.7 9.4 22.3 9.4 21.9 9.4 21.5 9.2 21.1 8.9 20.8 8.6 20.5 8.2 20.3 7.8 20.3ZM18.8 20.3C18.3 20.3 17.9 20.5 17.6 20.8 17.4 21.1 17.2 21.5 17.2 21.9 17.2 22.3 17.4 22.7 17.6 23 17.9 23.3 18.3 23.4 18.8 23.4 19.2 23.4 19.6 23.3 19.9 23 20.1 22.7 20.3 22.3 20.3 21.9 20.3 21.5 20.1 21.1 19.9 20.8 19.6 20.5 19.2 20.3 18.8 20.3Z" 
+                        style="clip-rule:evenodd" fill-rule="evenodd" fill="black"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <button type="button" class="burger burger__open"></button>
+            <ul class="site-navigation site-navigation_hidden">
+                <li class="site-navigation__item">
+                    <a href="#no_scroll">Новинки</a>
+                </li>
+                <li class="site-navigation__item">
+                    <a href="#no_scroll">Мужчины</a>
+                </li>
+                <li class="site-navigation__item">
+                    <a href="#no_scroll">Женщины</a>
+                </li>
+                <li class="site-navigation__item">
+                    <a href="#no_scroll">Дети</a>
+                </li>
+            </ul>
+            <a href="#no_scroll" class="sale">Распродажа</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="visually-hidden">Главная страница интернет магазина Nike Ball</h1>
+        <section class="promo">
+            <h2 class="visually-hidden">Новинка</h2>
+            <p class="promo__text">Новинка от Nike Running!</p>
+            <p class="promo__tagline">Найди свою скорость!</p>
+            <a href="#no_scroll" class="main-btn main-btn_big">Купить</a>
+        </section>
+
+        <section class="reviews">
+            <h2 class="visually-hidden">Обзор последних новинок</h2>
+            <div class="review">
+                <h3>Визуальный осмотр LeBron 18</h3>
+                <p class="review__text">Амортизация LeBron 18 объединяет Zoom Air и Max Air по-новому для Nike Basketball. Свойства Zoom и Max помогают улучшить уникальное сочетание скорости и мощности серии LeBron. По мере того, как LeBron развивался в спорте, амортизация в
+                    его фирменной линии, которая повлияла на многие технологические достижения NIKE, Inc. Ниже Джейсон Петри, дизайнер обуви LeBron, рассказывает больше о LeBron 18 и инновациях для спортсмена калибра Леброна.</p>
+                <a href="#no_scroll" class="main-btn main-btn_mini">Галерея</a>
+                <a href="#no_scroll" class="main-btn main-btn_mini">Поделиться</a>
+            </div>
+            <picture class="rewiew__picture">
+                <source srcset="img/lebron.webp 1x, 
+                                img/lebron@2x.webp 2x" type="image/webp">
+                <img src="img/lebron.png 1x" srcset="img/lebron@2x.png 2x" alt="" class="reviews__img">
+            </picture>
+        </section>
+
+        <section class="collections">
+            <h2 class="section-title text_center">Ограниченная серия</h2>
+            <ul class="collections__list">
+                <li class="collections__item">
+                    <figure>
+                        <picture class="collections__item-picture">
+                            <source srcset="img/nike_1.webp 1x, 
+                                img/nike_1@2x.webp 2x" type="image/webp">
+                            <img src="img/nike_1.jpg 1x" srcset="img/nike_1@2x.jpg 2x" alt="" class="collections__item-img">
+                        </picture>
+                        <figcaption class="collections__item-title">Кроссовки для бега</figcaption>
+                    </figure>
+                </li>
+                <li class="collections__item">
+                    <figure>
+                        <picture class="collections__item-picture">
+                            <source srcset="img/nike_2.webp 1x, 
+                                img/nike_2@2x.webp 2x" type="image/webp">
+                            <img src="img/nike_2.jpg 1x" srcset="img/nike_2@2x.jpg 2x" alt="" class="collections__item-img">
+                        </picture>
+                        <figcaption class="collections__item-title">Мужская обувь</figcaption>
+                    </figure>
+                </li>
+                <li class="collections__item">
+                    <figure>
+                        <picture class="collections__item-picture">
+                            <source srcset="img/nike_3.webp 1x, 
+                                img/nike_3@2x.webp 2x" type="image/webp">
+                            <img src="img/nike_3.jpg 1x" srcset="img/nike_3@2x.jpg 2x" alt="" class="collections__item-img">
+                        </picture>
+                        <figcaption class="collections__item-title">Спортивные брюки</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section class="equipment-sel">
+            <h2 class="section-title text_center">Подбор экипировки</h2>
+            <ul class="equipment__list">
+                <li class="equipment__item">
+                    <picture class="equipment__item-picture">
+                        <source srcset="img/equipment_1.webp 1x, 
+                            img/equipment_1@2x.webp 2x" type="image/webp">
+                        <img src="img/equipment_1.jpg 1x" srcset="img/equipment_1@2x.jpg 2x" alt="" class="equipment__item-img">
+                    </picture>
+                </li>
+                <li class="equipment__item">
+                    <picture class="equipment__item-picture">
+                        <source srcset="img/equipment_2.webp 1x, 
+                            img/equipment_2@2x.webp 2x" type="image/webp">
+                        <img src="img/equipment_2.jpg 1x" srcset="img/equipment_2@2x.jpg 2x" alt="" class="equipment__item-img">
+                    </picture>
+                </li>
+            </ul>
+        </section>
+
+        <section class="comments">
+            <h2 class="section-title text_center">Отзывы клиентов</h2>
+
+            <div class="comment__item">
+                <p class="comment__text">Доставка из Нидерландов указана на сайте отслеживания посылки и на самой посылке. Я сама была в шоке от того, что курьер привез посылку вовремя. Перед заказом я общалась с продавцом в фирменном магазине nike в г.Новосибирске, он сказал,
+                    что сам заказывает постоянно с сайта nike.com ,доставляют без проблем при условии, что вы не переносите дату доставки. Если вы перенесете дату доставки или отмените, то они могут потерять вашу посылку и вы потом будете очень долго
+                    ее ждать. Заказала на nike.com 26.09.2020 в г.Новосибирск, выбрала курьерская доставка DPD, пришло смс 29.09.2020 о необходимости предоставления данных для таможенного оформления, отправила скан главной страницы паспорта и ИНН. 14.10.2020
+                    посылка прибыла в Москву. Привез курьер 21.10.2020 (я сама выбрала эту дату). Буду заказывать еще.</p>
+                <div class="comment__author">
+                    <img src="img/rob.jpg" alt="" class="comment__img">
+                    <p class="comment__author-name">Robert De Niro</p>
+                    <p class="rating"></p>
+                </div>
+            </div>
+            <div class="comment__btns">
+                <button class="comment__btn"></button>
+                <button class="comment__btn comment__btn_active"></button>
+                <button class="comment__btn"></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <ul class="footer-nav">
+            <li class="footer-nav__item">
+                <a href="" class="footer__nav-link">Terms of Use</a>
+            </li>
+            <li class="footer-nav__item">
+                <a href="" class="footer__nav-link">Nike Privacy Policy</a>
+            </li>
+            <li class="footer-nav__item">
+                <a href="" class="footer__nav-link">CA Supply Chains Act</a>
+            </li>
+        </ul>
+        <p class="copy">&copy; 2020 Nike, Inc. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
