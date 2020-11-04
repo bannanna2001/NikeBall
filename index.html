@@ -15,8 +15,8 @@
                 <img src="img/logo.png 1x" srcset="img/logo@2x.png 2x" width="61" height="22" alt="Интернет магазин Nike Ball">
             </a>
             <div class="search">
+                <input type="text" name="search__input" id="search__input" class="search__input" required>
                 <label for="search__input" class="search__label">Search</label>
-                <input type="text" name="search__input" id="search__input" class="search__input">
             </div>
             <div class="user-area__actions">
                 <a href="#no_scroll" class="user-area__link" area-label="Избранное">
@@ -34,6 +34,7 @@
             </div>
         </div>
         <nav class="main-nav">
+            <a href="#no_scroll" class="sale">Распродажа</a>
             <button type="button" class="burger burger__open"></button>
             <ul class="site-navigation site-navigation_hidden">
                 <li class="site-navigation__item">
@@ -49,7 +50,6 @@
                     <a href="#no_scroll">Дети</a>
                 </li>
             </ul>
-            <a href="#no_scroll" class="sale">Распродажа</a>
         </nav>
     </header>
 
@@ -145,7 +145,20 @@
                 <div class="comment__author">
                     <img src="img/rob.jpg" alt="" class="comment__img">
                     <p class="comment__author-name">Robert De Niro</p>
-                    <p class="rating"></p>
+
+                    <div class="item__rating">
+                        <input type="radio" name="rating_cat_2" class="rating" value="1">
+                        <input type="radio" name="rating_cat_2" class="rating" value="2">
+                        <input type="radio" name="rating_cat_2" class="rating" value="3">
+                        <input type="radio" name="rating_cat_2" class="rating" value="4">
+                        <input type="radio" name="rating_cat_2" class="rating" value="5">
+                        <input type="radio" name="rating_cat_2" class="rating" value="6">
+                        <input type="radio" name="rating_cat_2" class="rating" value="7">
+                        <input type="radio" name="rating_cat_2" class="rating" value="8">
+                        <input type="radio" name="rating_cat_2" class="rating" value="9" checked>
+                        <input type="radio" name="rating_cat_2" class="rating" value="10">
+                    </div>
+
                 </div>
             </div>
             <div class="comment__btns">
@@ -170,6 +183,8 @@
         </ul>
         <p class="copy">&copy; 2020 Nike, Inc. All Rights Reserved</p>
     </footer>
+
+    <script src="js/custom.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 .search {
     position: relative;
-    width: 40.5%;
+    width: 50%;
 }
 
 .search__label {
@@ -8,10 +8,6 @@
     top: 0;
     left: 0;
     padding: 5px 5px 5px 30px;
-    background-image: url('../img/search_icon.png');
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    background-position: 10px 50%;
 }
 
 .search__input {
@@ -19,4 +15,13 @@
     padding: 5px 5px 5px 30px;
     border: 1px solid #333333;
     border-radius: 50px;
+    background-image: url('../img/search_icon.png');
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: 10px 50%;
+}
+
+.search__input:focus+.search__label,
+.search__input:valid+.search__label {
+    visibility: hidden;
 }

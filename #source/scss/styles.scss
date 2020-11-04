@@ -6,6 +6,7 @@
 @import "promo";
 @import "review";
 @import "collections";
+@import "rating";
 :root {
     --main-padding: 20px;
 }
@@ -46,7 +47,8 @@ h2 {
     width: 100%;
     padding: 0 40px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     padding-top: 10px;
     &>a {
         text-decoration: none;
@@ -60,6 +62,9 @@ h2 {
     text-align: center;
     text-decoration: none;
     border-radius: 50px;
+    &:hover {
+        background-color: #06428f;
+    }
 }
 
 .main-btn_big {
@@ -72,13 +77,32 @@ h2 {
     min-width: 130px;
 }
 
-.burger__open {
-    background-image: url('../img/burger.svg');
+.sale {
+    position: relative;
+    z-index: 10;
+    &:hover {
+        color: yellowgreen;
+    }
+}
+
+.burger {
+    position: absolute;
+    z-index: 10;
+    width: 32px;
+    height: 32px;
+    left: 40px;
+    background-image: url('../img/burger-close.svg');
     background-repeat: no-repeat;
-    background-size: 18px 14px;
+    background-size: 32px 24px;
     background-position: 50%;
     background-color: transparent;
     border: none;
+}
+
+.burger__open {
+    width: 32px;
+    padding: 0;
+    background-image: url('../img/menu-button.svg');
 }
 
 .section-title {
@@ -108,6 +132,8 @@ h2 {
 
 .comments {
     background-image: url('../img/comback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .comment__text {
@@ -122,12 +148,24 @@ h2 {
 }
 
 .comment__img {
+    grid-area: ava;
     width: 70px;
     height: 70px;
     border-radius: 50%;
 }
 
+.comment__author {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-areas: "ava name" "ava rating";
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 35px 35px;
+    grid-column-gap: 15px;
+    grid-row-gap: 5px;
+}
+
 .comment__author-name {
+    grid-area: name;
     font-size: 24px;
     font-weight: 600;
 }
